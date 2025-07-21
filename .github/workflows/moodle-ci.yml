@@ -1,0 +1,33 @@
+name: Moodle CI
+
+on: [push, pull_request]
+
+jobs:
+  code_quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+          extensions: mbstring, xml, intl, zip
+          coverage: none
+
+      - name: Download PHPStan
+        run: |
+          curl -L https://github.com/phpstan/phpstan/releases/latest/download/phpstan.phar -o phpstan.phar
+          chmod +x phpstan.phar
+
+      - name: Run PHPStan (static analysis)
+        run: |
+          ./phpstan.phar analyse --level=max --no-progress .
+
+      - name: Run PHPCS (Moodle coding standard)
+        uses: php-actions/phpcs@v1
+        with:
+          path: .
+          standard: moodle

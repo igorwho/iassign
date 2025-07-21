@@ -2,19 +2,19 @@
 
 /**
  * French language pack.
- * 
+ *
  * @author Patricia Alves Rodrigues
  * @author Leo^nidas de Oliveira Brandao
  * @author Danilo Leite Dalmon (collaborator)
  * @version v 1.3.2 2022/09/15 (new tags associated to the fields 'evaluate,reevaluate,editingbehavior' of 'iassign_ilm')
- * @version v 1.3.1 2020/07/04 (25 new tags; reordered); v 1.3 2019/01/10 (480 tags); v 1.2 2017/03/10 ; v 1.1 2013/08/28 
+ * @version v 1.3.1 2020/07/04 (25 new tags; reordered); v 1.3 2019/01/10 (480 tags); v 1.2 2017/03/10 ; v 1.1 2013/08/28
  * @package mod_iassign_lang
  * @since 2015/11/02
  * @copyright LInE (line.ime.usp.br) ; iMatica (www.matematica.br) - Computer Science Dep. of IME-USP (Brazil)
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * 
+ *
  * Notes: strings are organized lexicographicaly; if you have suggestions, let us now (line.ime.usp.br/dev/report.html?about=iassign_lang)
- * 
+ *
  */
 
 $string['action']                         = 'Action';
@@ -109,7 +109,7 @@ $string['close_alt']                      = 'Fermez cette fenêtre (tout changem
 $string['coefficient_variation']          = 'Coéficient de variation';
 $string['coefficient_variation_title']    = 'La variance (PV) - sur NS';
 $string['comment']                        = 'Commentaires';
-$string['comment_not_answer_this']        = 'Ne répondez pas à ce message'; 
+$string['comment_not_answer_this']        = 'Ne répondez pas à ce message';
 $string['comment_read']                   = 'Lire les commentaires';
 $string['comment_unread']                 = 'Nouveaux commentaires';
 $string['comment_unread_one']             = 'Nouveau commentaire';
@@ -227,7 +227,7 @@ $string['error_confirms_jar']             = 'Erreur : fichier pas trouvé dans l
 $string['error_delete_param']             = 'Erreur lors de l\'exclusion d\'un paramètre de l\'iMA dans la base de données';
 $string['error_dir_exists']               = 'Erreur : il existe déjà un répertoire portant ce nom. S\'il vous plaît entrer un autre nom.';
 $string['error_dir_not_selected_to_move'] = 'Erreur : il faut sélectionner le répertoire à déplacer!';
-$string['error_duplicated_activity_1']    = 'Erreur : quelque chose ne va pas lors de la duplication d\'activité!'
+$string['error_duplicated_activity_1']    = 'Erreur : quelque chose ne va pas lors de la duplication d\'activité!';
 $string['error_edit_ilm']                 = 'Erreur lors de la mise à jour du iMA dans la base de données.';
 $string['error_edit_param']               = 'Erreur lors de la mise à jour du paramètre iMA dans la base de données';
 $string['error_exercise_removed']         = 'Quelque chose ne marche pas. Peut-être que votre professeur a retiré le dossier d\'exercice. ' .
@@ -314,7 +314,7 @@ $string['file_ilm_export']                = 'Exporter l\'iMA sélectionné';
 $string['file_ilm_import']                = 'Importer l\'iMA sélectionné';
 $string['file_ilm_move']                  = 'Déplacer sélectionné';
 $string['file_ilm_recover']               = 'Récupérer le fichier';
-$string['file_ilm_recover_help']          = 'Cette opération récupérera tous les fichiers, avec toutes les activités iMA utilisées dans ce cours.<br>' . 
+$string['file_ilm_recover_help']          = 'Cette opération récupérera tous les fichiers, avec toutes les activités iMA utilisées dans ce cours.<br>' .
         'Les noms de fichiers seront (presque) les noms des activités.';
 $string['file_jar']                       = 'Nom du package iLM (JAR, si Java; ZIP ou TGZ, si HTML/JavaScript)';
 $string['file_jar_help']                  = 'Explication sur le champ "file_jar"';
@@ -322,7 +322,7 @@ $string['file_jar_help_help']             = 'Si l\'iMA est implémenté en HTML/
         'Si le système est implémenté en Java: ce champ est le nom de son fichier "file_jar"';
 $string['file_jar_path']                  = 'Chemin complet (répertoire) du iMA';
 $string['file_jar_path_help']             = 'Explication sur le champ "file_jar"'; //TODO be used instead of 'file_jar_help' and 'file_jar_help_help'
-$string['file_jar_path_help_help']        = 'Si HTML/JavaScript: le chemin du iMA sera utilisé pour créer un sous-répertoire et y exploser, dedan lui, tout le contenu du '. 
+$string['file_jar_path_help_help']        = 'Si HTML/JavaScript: le chemin du iMA sera utilisé pour créer un sous-répertoire et y exploser, dedan lui, tout le contenu du '.
   ' package ZIP.';
 $string['file_modified']                  = 'Date de changement';
 $string['filejarnotfound']                = 'Fichier JAR introuvable. Avertir l\'administration.';
@@ -529,7 +529,7 @@ $string['previous_student']               = 'Étudiant précédent';
 $string['previous_student_activity']      = 'Activité précédente';
 $string['previous_timeavailable']         = 'Activité indisponible : attendez la date d\'ouverture.';
 $string['print']                          = 'Imprimer';
-$string['print_help']                     = 'Présentez une page avec du texte brut pour permettre la copie / coller'; 
+$string['print_help']                     = 'Présentez une page avec du texte brut pour permettre la copie / coller';
 $string['print_report']                   = 'Rapport - version pour impression';
 $string['proportion_correct']             = 'Proportion de corrects';
 $string['proposition']                    = 'Texte de l\'exercice';

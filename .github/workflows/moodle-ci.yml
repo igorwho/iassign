@@ -1,0 +1,36 @@
+name: Moodle CI
+
+on: [push, pull_request]
+
+jobs:
+  code_quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+          extensions: mbstring, xml, intl, zip
+          coverage: none
+
+      - name: Install dependencies (if needed)
+        run: |
+          if [ -f composer.json ]; then
+            composer install
+          fi
+
+      - name: Run PHPStan (static analysis)
+        uses: php-actions/phpstan@v3
+        with:
+          path: .
+          level: max
+
+      - name: Run PHPCS (Moodle coding standard)
+        uses: php-actions/phpcs@v1
+        with:
+          path: .
+          standard: moodle

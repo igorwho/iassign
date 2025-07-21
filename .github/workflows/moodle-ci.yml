@@ -17,17 +17,14 @@ jobs:
           extensions: mbstring, xml, intl, zip
           coverage: none
 
-      - name: Install dependencies (if needed)
+      - name: Download PHPStan
         run: |
-          if [ -f composer.json ]; then
-            composer install
-          fi
+          curl -L https://github.com/phpstan/phpstan/releases/latest/download/phpstan.phar -o phpstan.phar
+          chmod +x phpstan.phar
 
       - name: Run PHPStan (static analysis)
-        uses: php-actions/phpstan@v3
-        with:
-          path: .
-          level: max
+        run: |
+          ./phpstan.phar analyse --level=max --no-progress .
 
       - name: Run PHPCS (Moodle coding standard)
         uses: php-actions/phpcs@v1
